@@ -1,0 +1,67 @@
+<!-- <form>
+    <input type="text" #name placeholder="Name">
+    <input type="text" #age placeholder="Age">
+    <input type="text" #email placeholder="Email">
+    <input type="text" #phone placeholder="Phone">
+    <input type="text" #Address placeholder="Address">
+    <input type="button" value="ADD" (click)="ADD(name.value,email.value,phone.value,street.value,suite.value,city.value)" >
+  </form> -->
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  + Add User
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" #name class="form-control" aria-describedby="emailHelp" placeholder="name">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="email" #email class="form-control" placeholder="Email">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Phone</label>
+            <input type="tel" #phone class="form-control" placeholder="number">
+          </div>
+
+          <div class="mb-3">
+            <label for="citySelect" class="form-label">City</label>
+            <select #city class="form-select" id="citySelect">
+              <option selected> city</option>
+              <option let *ngFor="let s of Users" value="{{s.address.city}}">{{s.address.city}}</option>
+            </select>
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Street</label>
+            <input type="text" #street class="form-control" placeholder="street">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">suite</label>
+            <input type="text" #suite class="form-control" placeholder="suite">
+          </div>
+
+          <button type="submit" class="btn btn-primary m-1" value="ADD" data-bs-dismiss="modal"
+            (click)=" ADD(name.value , email.value , phone.value, city.value , street.value , suite.value )">Submit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 

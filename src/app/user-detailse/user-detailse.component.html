@@ -1,0 +1,106 @@
+<!-- <div *ngIf="user ; else falseBlock" class="alert alert-info">
+    <p>ID: {{user.id}}</p>
+    <p>Name: {{user.name}}</p>
+     <p>User Name: {{user.username}}</p> 
+    <p>Email: {{user.email}}</p>
+     <p>Address: {{user.address.street}},{{user.address.suite}} ,{{user.address.city}}</p> 
+    <p>Phone: {{user.phone}}</p>
+  </div>
+  
+  <ng-template #falseBlock>
+    <div style="color: red; " >
+      <h1>Loading....</h1>
+    </div>
+  </ng-template> -->
+  <!-- <div *ngIf="user ; else falseBlock" class="alert alert-info"> 
+    <div class="container-fluid">
+      <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-secondary bg-light">
+        <ul class="navbar-nav mx-auto justify-content-around w-100 ">
+          <li class="nav-item">
+            
+            <a class="nav-link">ID: {{user.id}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Name: {{user.name}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Email: {{user.email}}</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link">Address: {{user.address.street}},{{user.address.suite}}, {{user.address.city}}</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link">Phone: {{user.phone}}</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link">Albums: {{user.albums}}</a>
+          </li> -->
+        <!-- </ul>
+      </nav>
+    </div>
+    </div>
+   </div>
+   
+  <ng-template #falseBlock>
+      <div style="color: grey;text-align: center;">
+        <h1>Loading....</h1>
+      </div>
+    </ng-template> 
+     --> 
+     <div *ngIf="user; else falseBlock" class="alert alert-info"> 
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-secondary bg-light">
+              <ul class="navbar-nav mx-auto justify-content-around w-100">
+                <li class="nav-item">
+                  <a class="nav-link"><strong>ID:</strong> {{user.id}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"> <strong>Name:</strong> {{user.name}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><strong>Email:</strong> {{user.email}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><strong>Phone:</strong> {{user.phone}}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      
+      <ng-template #falseBlock>
+        <div class="spinner-grow" role="status">
+          <span class="visually-hidden">Loading...</span> 
+
+          <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+
+      
+      </ng-template>
+      
+ 
+<div *ngIf="albums" class="album-gallery-container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center mb-4">Albums</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div *ngFor="let album of albums" class="col">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://th.bing.com/th/id/OIP.10E2hAVM3usBG8SLZG1MkQHaE3?w=252&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="{{ album.title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ album.title }}</h5>
+              <p class="card-text">{{ album.description }}</p>
+              <a [routerLink]="['/photos', album.id]" class="btn btn-primary">View Photos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
