@@ -1,12 +1,5 @@
-<!-- <form>
-    <input type="text" #name placeholder="Name">
-    <input type="text" #age placeholder="Age">
-    <input type="text" #email placeholder="Email">
-    <input type="text" #phone placeholder="Phone">
-    <input type="text" #Address placeholder="Address">
-    <input type="button" value="ADD" (click)="ADD(name.value,email.value,phone.value,street.value,suite.value,city.value)" >
-  </form> -->
-  <!-- Button trigger modal -->
+
+  <!-- Button trigger modal-->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   + Add User
 </button>
@@ -20,7 +13,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        
+
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Name</label>
@@ -58,10 +51,9 @@
           <button type="submit" class="btn btn-primary m-1" value="ADD" data-bs-dismiss="modal"
             (click)=" ADD(name.value , email.value , phone.value, city.value , street.value , suite.value )">Submit</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          
+
         </form>
       </div>
     </div>
   </div>
 </div>
- 

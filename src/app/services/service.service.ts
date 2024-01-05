@@ -7,9 +7,9 @@ import { Injectable } from '@angular/core';
 export class ServiceService {
 
   constructor(private readonly myClient:HttpClient) { }
-private readonly Base_URL_Albums="http://localhost:3000/albums";
-   private readonly Base_URL_photos="http://localhost:3000/photos";
-  private readonly Base_URL1 = "http://localhost:3000/users";
+private readonly Base_URL_Albums="https://jsonplaceholder.typicode.com/albums";
+   private readonly Base_URL_photos="https://jsonplaceholder.typicode.com/photos";
+  private readonly Base_URL1 = "https://jsonplaceholder.typicode.com/users";
 
 GetAllUsers(){
   return this.myClient.get(this.Base_URL1);
