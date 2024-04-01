@@ -1,14 +1,14 @@
 Angular Client for Client Profiles and Car Albums
 This Angular project serves as a client application for managing client profiles and their car albums. It interacts with a JSON fake API to retrieve data. The project features the following components:
 
-Client Profiles:
+*Client Profiles:
 Display a list of clients with their basic information (name, photo, etc.).
 Clicking on a client’s name redirects to their detailed profile page.
-Client Profile Page:
+*Client Profile Page:
 Show detailed information about a specific client.
 Include personal details, contact information, and any other relevant data.
 Provide links to view the client’s car albums.
-Car Albums:
+*Car Albums:
 Each client has one or more car albums.
 An album contains a series of photos showcasing the client’s cars.
 Clicking on an album displays the photos in a gallery format.
@@ -19,7 +19,7 @@ Navigate to the project folder: cd angular-client-profiles.
 Install Dependencies:
 Run npm install to install the necessary packages.
 Start the Development Server:
-Execute npm start to build the application and run it on http://localhost:3000.
+Execute npm start to build the application and run it on http://localhost:4200.
 The application will automatically reload when you make changes to the source files.
 Available Scripts
 npm start: Builds the application, watches for changes, and runs a development server.
