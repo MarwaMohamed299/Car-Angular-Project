@@ -1,27 +1,29 @@
-# Project2
+Angular Client for Client Profiles and Car Albums
+This Angular project serves as a client application for managing client profiles and their car albums. It interacts with a JSON fake API to retrieve data. The project features the following components:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Client Profiles:
+Display a list of clients with their basic information (name, photo, etc.).
+Clicking on a client’s name redirects to their detailed profile page.
+Client Profile Page:
+Show detailed information about a specific client.
+Include personal details, contact information, and any other relevant data.
+Provide links to view the client’s car albums.
+Car Albums:
+Each client has one or more car albums.
+An album contains a series of photos showcasing the client’s cars.
+Clicking on an album displays the photos in a gallery format.
+Getting Started
+Clone the Repository:
+Clone this repository to your local machine using git clone [repository_url].
+Navigate to the project folder: cd angular-client-profiles.
+Install Dependencies:
+Run npm install to install the necessary packages.
+Start the Development Server:
+Execute npm start to build the application and run it on http://localhost:3000.
+The application will automatically reload when you make changes to the source files.
+Available Scripts
+npm start: Builds the application, watches for changes, and runs a development server.
+npm run build: Compiles TypeScript and copies assets once.
+npm run build:watch: Compiles TypeScript and copies assets in watch mode.
+npm test: Builds the application and runs unit and functional tests.
+npm run ci: Cleans, lints, builds, and runs tests.
